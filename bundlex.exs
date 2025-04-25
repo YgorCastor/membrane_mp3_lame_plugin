@@ -14,7 +14,7 @@ defmodule Membrane.MP3.Lame.BundlexProject do
         sources: ["encoder.c"],
         deps: [membrane_common_c: :membrane],
         os_deps: [
-          mp3lame: [
+          lame: [
             {:precompiled, Membrane.PrecompiledDependencyProvider.get_dependency_url(:lame)},
             :pkg_config
           ]
